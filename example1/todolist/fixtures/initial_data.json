@@ -1,0 +1,424 @@
+[
+{
+  "pk": 1, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "logentry", 
+    "name": "log entry", 
+    "app_label": "admin"
+  }
+},
+{
+  "pk": 2, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "permission", 
+    "name": "permission", 
+    "app_label": "auth"
+  }
+},
+{
+  "pk": 3, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "group", 
+    "name": "group", 
+    "app_label": "auth"
+  }
+},
+{
+  "pk": 4, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "user", 
+    "name": "user", 
+    "app_label": "auth"
+  }
+},
+{
+  "pk": 5, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "contenttype", 
+    "name": "content type", 
+    "app_label": "contenttypes"
+  }
+},
+{
+  "pk": 6, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "session", 
+    "name": "session", 
+    "app_label": "sessions"
+  }
+},
+{
+  "pk": 7, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "task", 
+    "name": "task", 
+    "app_label": "todolist"
+  }
+},
+{
+  "pk": "4tcwxv19qfer5mtlw1gat83g5r8j4udv", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2014-01-20T22:54:19.474Z", 
+    "session_data": "OThiMjBjMWY5MjY2NjkwYWY2ODRhYjI0Y2U1NTVlZjhmNTM1Zjc0Mjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+  }
+},
+{
+  "pk": 1, 
+  "model": "todolist.task", 
+  "fields": {
+    "finished": null, 
+    "title": "Example task 1", 
+    "duedate": null, 
+    "description": "This is a task", 
+    "created": "2014-01-06"
+  }
+},
+{
+  "pk": 2, 
+  "model": "todolist.task", 
+  "fields": {
+    "finished": null, 
+    "title": "Example task 2", 
+    "duedate": "2014-01-06", 
+    "description": "Another task", 
+    "created": "2014-01-06"
+  }
+},
+{
+  "pk": 3, 
+  "model": "todolist.task", 
+  "fields": {
+    "finished": "2014-01-06", 
+    "title": "Example task 3", 
+    "duedate": "2014-01-06", 
+    "description": "Another task", 
+    "created": "2014-01-06"
+  }
+},
+{
+  "pk": 4, 
+  "model": "todolist.task", 
+  "fields": {
+    "finished": "2014-01-06", 
+    "title": "Example task 4", 
+    "duedate": null, 
+    "description": "description", 
+    "created": "2014-01-06"
+  }
+},
+{
+  "pk": 5, 
+  "model": "todolist.task", 
+  "fields": {
+    "finished": null, 
+    "title": "Example task 5", 
+    "duedate": "2014-01-06", 
+    "description": "five", 
+    "created": "2014-01-06"
+  }
+},
+{
+  "pk": 6, 
+  "model": "todolist.task", 
+  "fields": {
+    "finished": "2014-01-06", 
+    "title": "Example task 6", 
+    "duedate": null, 
+    "description": "six", 
+    "created": "2014-01-06"
+  }
+},
+{
+  "pk": 1, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_logentry", 
+    "name": "Can add log entry", 
+    "content_type": 1
+  }
+},
+{
+  "pk": 2, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_logentry", 
+    "name": "Can change log entry", 
+    "content_type": 1
+  }
+},
+{
+  "pk": 3, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_logentry", 
+    "name": "Can delete log entry", 
+    "content_type": 1
+  }
+},
+{
+  "pk": 4, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_permission", 
+    "name": "Can add permission", 
+    "content_type": 2
+  }
+},
+{
+  "pk": 5, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_permission", 
+    "name": "Can change permission", 
+    "content_type": 2
+  }
+},
+{
+  "pk": 6, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_permission", 
+    "name": "Can delete permission", 
+    "content_type": 2
+  }
+},
+{
+  "pk": 7, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_group", 
+    "name": "Can add group", 
+    "content_type": 3
+  }
+},
+{
+  "pk": 8, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_group", 
+    "name": "Can change group", 
+    "content_type": 3
+  }
+},
+{
+  "pk": 9, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_group", 
+    "name": "Can delete group", 
+    "content_type": 3
+  }
+},
+{
+  "pk": 10, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_user", 
+    "name": "Can add user", 
+    "content_type": 4
+  }
+},
+{
+  "pk": 11, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_user", 
+    "name": "Can change user", 
+    "content_type": 4
+  }
+},
+{
+  "pk": 12, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_user", 
+    "name": "Can delete user", 
+    "content_type": 4
+  }
+},
+{
+  "pk": 13, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_contenttype", 
+    "name": "Can add content type", 
+    "content_type": 5
+  }
+},
+{
+  "pk": 14, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_contenttype", 
+    "name": "Can change content type", 
+    "content_type": 5
+  }
+},
+{
+  "pk": 15, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_contenttype", 
+    "name": "Can delete content type", 
+    "content_type": 5
+  }
+},
+{
+  "pk": 16, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_session", 
+    "name": "Can add session", 
+    "content_type": 6
+  }
+},
+{
+  "pk": 17, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_session", 
+    "name": "Can change session", 
+    "content_type": 6
+  }
+},
+{
+  "pk": 18, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_session", 
+    "name": "Can delete session", 
+    "content_type": 6
+  }
+},
+{
+  "pk": 19, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_task", 
+    "name": "Can add task", 
+    "content_type": 7
+  }
+},
+{
+  "pk": 20, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_task", 
+    "name": "Can change task", 
+    "content_type": 7
+  }
+},
+{
+  "pk": 21, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_task", 
+    "name": "Can delete task", 
+    "content_type": 7
+  }
+},
+{
+  "pk": 1, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "admin", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2014-01-06T22:54:19.328Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$OVKPliEtHYAs$uyz7dXif2Vcyzizh226bRUp35kcg/1Xkoi1QUrpVjoI=", 
+    "email": "admin@example.org", 
+    "date_joined": "2014-01-06T22:54:10.746Z"
+  }
+},
+{
+  "pk": 1, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 1, 
+    "action_time": "2014-01-06T22:55:51.316Z", 
+    "object_repr": "Example task 1", 
+    "object_id": "1", 
+    "change_message": "", 
+    "user": 1, 
+    "content_type": 7
+  }
+},
+{
+  "pk": 2, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 1, 
+    "action_time": "2014-01-06T22:56:04.478Z", 
+    "object_repr": "Example task 2", 
+    "object_id": "2", 
+    "change_message": "", 
+    "user": 1, 
+    "content_type": 7
+  }
+},
+{
+  "pk": 3, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 1, 
+    "action_time": "2014-01-06T22:56:19.064Z", 
+    "object_repr": "Example task 3 (finished)", 
+    "object_id": "3", 
+    "change_message": "", 
+    "user": 1, 
+    "content_type": 7
+  }
+},
+{
+  "pk": 4, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 1, 
+    "action_time": "2014-01-06T22:56:36.075Z", 
+    "object_repr": "Example task 4 (finished)", 
+    "object_id": "4", 
+    "change_message": "", 
+    "user": 1, 
+    "content_type": 7
+  }
+},
+{
+  "pk": 5, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 1, 
+    "action_time": "2014-01-06T22:56:44.257Z", 
+    "object_repr": "Example task 5", 
+    "object_id": "5", 
+    "change_message": "", 
+    "user": 1, 
+    "content_type": 7
+  }
+},
+{
+  "pk": 6, 
+  "model": "admin.logentry", 
+  "fields": {
+    "action_flag": 1, 
+    "action_time": "2014-01-06T22:56:52.634Z", 
+    "object_repr": "Example task 6 (finished)", 
+    "object_id": "6", 
+    "change_message": "", 
+    "user": 1, 
+    "content_type": 7
+  }
+}
+]

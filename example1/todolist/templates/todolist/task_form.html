@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Add Task</h1>
+
+<div class="container">
+	<div class="row col-md-6">
+		<form action="{% if task %}{% url "task_update" pk=task.id %}{% else %}{% url "task_create" %}{% endif %}" method="POST" role="form" class="form-inline">
+			{% csrf_token %}
+			<table class="table">
+				{{ form.as_table }}
+			</table>
+			<input type="submit" value="Save" class="btn btn-primary"/>
+		</form>
+	</div>
+</div>
+<a href="{% url "task_list" %}" class="btn btn-default">back to list</a>
+
+
+{% endblock %}

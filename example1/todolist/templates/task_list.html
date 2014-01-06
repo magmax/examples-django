@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+	<div class="row col-md-4">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Task</th>
+					<th>Due Date</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for task in tasks %}
+				<tr>
+					<td>{% if task.finished %}<del>{% endif %}{{ task.title }}{% if task.finished %}</del>{% endif %}</td>
+					<td>{% if task.duedate %}{{ task.duedate }}{% endif%}</td>
+					
+					<td>
+						<a href="/task/{{ task.id }}/update"><span class="glyphicon glyphicon-edit"></span></a>
+						<a href="/task/{{ task.id }}/delete"><span class="glyphicon glyphicon-remove-circle"></span></a>
+					</td>
+				</tr>
+				{% endfor %}
+				
+			</tbody>
+		</table>
+		{% if is_paginated %}
+		<ul class="pager">
+			{% if page_obj.has_previous %}<li class="previous"><a href="?page={{ page_obj.previous_page_number }}">&larr; Older</a></li>{% endif %}
+			{% if page_obj.has_next     %}<li class="next">    <a href="?page={{ page_obj.next_page_number }}">Newer &rarr;</a></li>{% endif %}
+		</ul>
+		{% endif %}
+	</div>
+</div>
+
+<a href="/task/create" role="button" class="btn btn-default">New task</a>
+{% endblock %}
