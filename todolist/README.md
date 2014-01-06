@@ -58,4 +58,5 @@ And it will be listening on localhost:7500
 
 ## To be done
 
-Render Date fields as dates.
+- Render Date fields as dates.
+- Add tests.
